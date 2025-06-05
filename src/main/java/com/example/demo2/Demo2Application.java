@@ -9,8 +9,8 @@ public class Demo2Application {
     public static void main(String[] args) {
         SpringApplication.run(Demo2Application.class, args);
         try {
-            Thread.currentThread().join();
             System.out.println("demo2");
+            Thread.currentThread().join();
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
         }
